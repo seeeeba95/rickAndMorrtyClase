@@ -12,10 +12,12 @@ function tabla(datos) {
                         <td><img width="50px" height="50px" src="${temp.image}"></td>
                         <td>${temp.species}</td> 
                     </tr> `;
-
         }
 } 
 
+function capturaDato(){
+    
+} 
 
 $(document).ready (function (){
     contenido = document.getElementById("contenido");
