@@ -20,7 +20,7 @@
 
 <body>
 <header>
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg bg-light navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="">Rick And Morty</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -39,19 +39,30 @@
                             Filtros
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Especies</a></li>
-                            <li><a class="dropdown-item" href="#">Imágenes</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="mostrarEspecies()">Especies</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="mostrarImagenes()">Imágenes</a></li>
                         </ul>
                 </ul>
                 <form class="d-flex" role="search">
                     <input id="dato" class="form-control me-2" type="search" placeholder="Nombre Personaje" aria-label="Search">
                     <button class="btn btn-outline-success" type="button" onclick="capturarDato()">Buscar</button>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                        </a>
+                    </li>
                 </form>
             </div>
         </div>
     </nav>
 </header>
 
+<div id="carta"></div>
+
+<div id="galeria"></div>
+
+
+<div id="tabla_principal">
     <table class="table container">
         <thead>
             <tr>
@@ -68,6 +79,7 @@
             </tr>
         </tbody>
     </table>
+</div>
 
     <!--javaScript local-->
     <script src="./assets/js/script.js"></script>
